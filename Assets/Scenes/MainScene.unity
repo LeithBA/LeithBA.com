@@ -19809,9 +19809,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4de34a1e5699b1242984cc15f14d90fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isLink: 0
+  isLink: 1
   url: www.google.com
-  gameManager: {fileID: 2067367145}
 --- !u!54 &1393587645
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -23712,7 +23711,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 0.200119.3
+  m_Text: 0.210119.1
 --- !u!222 &1667171583
 CanvasRenderer:
   m_ObjectHideFlags: 0
