@@ -1,4 +1,4 @@
-//Assets/Plugins/WebGL/JSFunctions.jslib
+//Assets/Plugins/WebGL/OpenWindow.jslib
 mergeInto(LibraryManager.library, {
 
   Hello: function () {
