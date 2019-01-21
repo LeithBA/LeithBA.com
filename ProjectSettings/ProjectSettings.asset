@@ -653,7 +653,7 @@ PlayerSettings:
   facebookSdkVersion: 7.9.4
   apiCompatibilityLevel: 2
   cloudProjectId: e390d304-0cb3-4039-a881-d7c80a3444a4
-  projectName: LeithBA.com (1)
+  projectName: LeithBA.com
   organizationId: leithba
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
