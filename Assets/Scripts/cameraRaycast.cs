@@ -15,7 +15,7 @@ public class cameraRaycast : MonoBehaviour
             RaycastHit hit;
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             // do we hit our portal plane?
-            if (Physics.Raycast(ray, out hit))
+            if (Physics.Raycast(ray, out hit) && hit.collider.gameObject.tag == "mainRenderPlane");
             {
                 // casts a new ray from the corresponding portalCamera in the same direction
                 Ray portalRay = new Ray(portalCameras[GetIndex(hit.collider.gameObject)].transform.position, ray.direction);
@@ -30,10 +30,11 @@ public class cameraRaycast : MonoBehaviour
                     GameObject target = portalHit.collider.gameObject;
 
                     
-                    if(target.GetComponent<customButton>())
+                    if(target.GetComponent<customButton>() != null)
                         target.GetComponent<customButton>().OnClick();
                     
-                    target.GetComponent<cubeLevitation>().multiplier += 25;
+                    if(target.GetComponent<cubeLevitation>() != null)
+                        target.GetComponent<cubeLevitation>().multiplier += 25;
 
                 }
             }

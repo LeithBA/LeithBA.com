@@ -9,7 +9,8 @@ public class customButton : MonoBehaviour
 {
     [SerializeField] bool isLink;
     [SerializeField] string url;
-
+    [SerializeField] bool isTextDisplay;
+    [SerializeField, TextArea] string text;
 
     [DllImport("__Internal")]
     private static extern void OpenWindow(string url);
@@ -20,5 +21,12 @@ public class customButton : MonoBehaviour
             if (isLink)
                 OpenWindow(url);
         #endif
+            if (isTextDisplay)
+                displayText();
+    }
+
+    void displayText()
+    {
+        Debug.Log(text);
     }
 }
